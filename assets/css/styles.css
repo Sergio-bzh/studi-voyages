@@ -1,5 +1,48 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* Surcharge du Root BS */
+:root {
+/** Colors **/
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6f42c1;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #6c757d;
+--gray-dark: #343a40;
+--primary: #ffb527;
+--secondary: #6c757d;
+--success: #28a745;
+--info: #17a2b8;
+--warning: #ffc107;
+--danger: #f5088e;
+--light: #f8f9fa;
+--dark: #343a40;
+/** My own variables déclaration **/
+--studi-yellow:#ffb527;
+--studi-blue: #59B9C7;
+/** Breack-Points **/
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+/** Fonts **/
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+
 /* Reset global*/
-*, *::before, *::after{
+*, 
+*::before, 
+*::after{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -10,4 +53,34 @@
 /* Vérification de la liaison entre feuille de styles et html */
 body{
     background-color: azure;
+    background-image: url(../images/img/Dall-E_Japan-landscape-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.header_button{
+    border: 1px solid var(--studi-yellow);
+}
+.header_button:hover{
+    background-color: var(--studi-yellow);
+    color: white;
+}
+main{
+    height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_navbar{
+    align-items: center;
+}
+.search-button{
+    border: 1px solid var(--studi-yellow);
+    color: white;
+    background-color: var(--studi-yellow);
+}
+.schedules{
+    display: flex;
+    flex-direction: column;
+    color: var(--studi-yellow);
 }
