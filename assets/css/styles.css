@@ -40,7 +40,9 @@
 
 
 /* Reset global*/
-*, *::before, *::after{
+*, 
+*::before, 
+*::after{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -51,9 +53,14 @@
 /* Vérification de la liaison entre feuille de styles et html */
 body{
     background-color: azure;
-    /* background-color: red; */
+    background-image: url(../images/img/Dall-E_Japan-landscape-1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
+.header_button{
+    border: 1px solid var(--studi-yellow);
+}
 .header_button:hover{
     background-color: var(--studi-yellow);
     color: white;
@@ -63,4 +70,17 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.search_navbar{
+    align-items: center;
+}
+.search-button{
+    border: 1px solid var(--studi-yellow);
+    color: white;
+    background-color: var(--studi-yellow);
+}
+.schedules{
+    display: flex;
+    flex-direction: column;
+    color: var(--studi-yellow);
 }
