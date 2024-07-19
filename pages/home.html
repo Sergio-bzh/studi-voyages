@@ -1,0 +1,148 @@
+<!DOCType html>
+<html lang="fr-FR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="assets/js/scripts.js" defer></script>
+        <link rel="stylesheet" href="../assets/lib/bootstrap/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/home.css">
+        <title>Study Voyages | Accueil</title>
+    </head>
+    <body class="d-flex flex-column align-items-center">
+
+        <header class="container">
+            <nav class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+              <div class="col-md-3 mb-2 mb-md-0">
+                <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                    <img src="../assets/images/logo/logo_studi_voyages.png" alt="logo">
+                  <!-- <svg class="bi" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg> -->
+                </a>
+              </div>
+
+              <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 header-navbar">
+                <!-- <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li> -->
+                <li><a href="../index.html" class="nav-link px-5">Page de départ</a></li>
+                <li><a href="#contact" class="nav-link px-2">Contact</a></li>
+                <!-- <li><a href="#" class="nav-link px-2">Pricing</a></li>
+                <li><a href="#" class="nav-link px-2">FAQs</a></li>
+                <li><a href="#" class="nav-link px-2">About</a></li> -->
+              </ul>
+
+              <div class="col-md-3 text-end">
+                <button type="button" class="btn me-2 header_button">Connexion</button>
+                <!-- <button type="button" class="btn btn-primary">Sign-up</button> -->
+              </div>
+            </nav>
+        </header>
+
+        <main class="container-fluid d-flex flex-column">
+
+            <section class="d-flex flex-column me-3 search">
+            <div class="text-center search_title_wrapper">
+                <h1>Bienvenue sur votre agence de voyages du futur !</h1>
+            </div>
+            <ol class="d-flex search_navbar">
+                <li>
+                    <label for="destination">Trouver une destination
+                        <input class="me-2" type="text" id="destination" placeholder="Write here">
+                    </label>
+                </li>
+                <li>
+                    <label for="departure-date">Date de départ
+                        <input class="me-2" type="date" id="departure-date">
+                    </label>
+                </li>
+                <li>
+                    <label for="return-date">Date de retour
+                        <input class="me-2" type="date" id="return-date">
+                    </label>
+                </li>
+                    <li><input class="btn search_button me-2" type="button" value="Search">
+                </li>
+            </ol>
+            <div class="search_image">
+                <img src="../assets/images/img/Dall-E_Blue-sea-and-sand.png" alt="backround image sea">
+            </div>
+            </section>
+
+            <section class="container d-flex flex-column align-items-center my-5 offer">
+
+            <div class="offer_bar_filter">
+                <ol class="d-flex bar_filter_container">
+                    <li class="me-3 filter_item">Montagne</li>
+                    <li class="me-3 filter_item">Plage</li>
+                    <li class="me-3 filter_item">City tour</li>
+                </ol>
+
+            </div>
+            <p>A votre guise, la ville, la mer ou la montagne.</p>
+            <div class="search_title">
+                <h2>Découvrez nos régions</h2>
+            </div>
+            <div class="row offer_container">
+                <div class="col col-4 card_offer">Offre Machin</div>
+                <div class="col col-4 card_offer">Offre Bidule</div>
+                <div class="col col-4 card_offer">Offre Truc</div>
+                <div class="col col-4 card_offer">Offre Chose</div>
+                <div class="col col-4 card_offer">Offre Bazar</div>
+                <div class="col col-4 card_offer">Offre Autre Machin</div>
+            </div>
+            </section>
+
+            <section id="contact" class="container d-flex flex-column contact">
+                <div class="text-center contact_title">
+                    <h2>Nous contacter</h2>
+                </div>
+
+                <form class="d-flex flex-column" action="#" id="contac_us">
+                    <label for="destination">Destination :
+                        <input type="text" class="form-control" id="destination" placeholder="Destination">
+                    </label>
+                    <label for="departure-date">Départ :
+                        <input type="text" class="form-control" id="departure-date"placeholder="Departure">
+                    </label>
+                    <label for="return">Retrour :
+                        <input type="text" class="form-control" id="return"placeholder="Return">
+                    </label>
+                    <label for="email">E-mail :
+                        <input type="email" class="form-control" id="email"placeholder="Email">
+                    </label>
+                    <label for="message">Destination :
+                        <input type="textarea" class="form-control" id="message"placeholder="Message"><br>
+                    </label>
+                    <button type="submit" class="btn contact_button">Envoyer</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <div class="col-md-4 d-flex flex-column align-items-center">
+                <h2 class="text-dark footer-title">Horaires</h2>
+                <ul>
+                    <li class="text-dark">Lundi    : de 07:00 à 19:00</li>
+                    <li class="text-dark">Mardi    : de 07:00 à 19:00</li>
+                    <li class="text-dark">Mercredi : de 07:00 à 19:00</li>
+                    <li class="text-dark">Jeudi    : de 07:00 à 19:00</li>
+                    <li class="text-dark">Vendredi : de 07:00 à 19:00</li>
+                    <li class="text-dark">Samedi   : de 07:00 à 19:00</li>
+                    <li class="text-dark">Dimanche : de 07:00 à 19:00</li>
+                </ul>
+            </div>
+
+            <div class="col-md-4 align-self-end text-center">
+                <span class="mb-3 mb-md-0 text-dark">Copyleft <span class="copy_left">&copy;</span> 2024 Company, Inc</span>
+            </div>
+
+            <ul class="nav col-md-4 justify-content-end list-unstyled d-flex flex-column align-items-center">
+                <li class="my-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use><i class="text-dark bi bi-twitter-x"></i></svg></a></li>
+                <li class="my-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"><i class="text-dark bi bi-instagram"></i></use></svg></a></li>
+                <li class="my-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"><i class="text-dark bi bi-meta"></i></use></svg></a></li>
+            </ul>
+        </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

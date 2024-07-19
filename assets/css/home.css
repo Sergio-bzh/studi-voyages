@@ -38,7 +38,6 @@
     --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-
 /* Reset global*/
 *, 
 *::before, 
@@ -48,47 +47,74 @@
     list-style: none;
     text-decoration: none;
     box-sizing: border-box;
-
 }
 /* Vérification de la liaison entre feuille de styles et html */
 body{
-    background-color: azure;
-    background-image: url(../images/img/Dall-E_Blue-sea-and-sand.png);
+    background-color: var(--studi-blue)
+    /* background-image: url(../images/img/Dall-E_Blue-sea-and-sand.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
-.header_landing_link{
-    color: white;
+header{
+    position:fixed;
+    z-index: 1000;
 }
-.header_landing_link:hover{
+input{
+    margin-bottom: 1rem;
+}
+.header-navbar .nav-link{
+    color:black;
+}
+.header-navbar .nav-link:hover{
     color: var(--studi-yellow);
 }
-.header_button{
+.header_button, .contact_button{
     border: 1px solid var(--studi-yellow);
+    color: black;
 }
-.header_button:hover{
+.header_button:hover, .search_button:hover, .contact_button:hover{
     background-color: var(--studi-yellow);
     color: white;
 }
-main{
-    height: 55vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.search{
+    margin-top: 120px;
+    width: 100vw;
+    height: 200px;
+    position: static;
 }
-.search_navbar{
-    align-items: center;
+.search img{
+    position: absolute;
+    width: 100%;
+    left: 1px;
+    top: 1px;
+    max-height: 21rem;
 }
-.search-button{
-    border: 1px solid var(--studi-yellow);
+.search_title_wrapper, .search_navbar{
     color: white;
-    background-color: var(--studi-yellow);
+    z-index: 1;
+    align-self: center;
+    align-items: center;
 }
-.schedules{
-    display: flex;
-    flex-direction: column;
-    color: var(--studi-yellow);
+.bar_filter_container{
+    background-color: var(--studi-yellow);
+    color: white;
+}
+.filter_item:hover{
+    color: black;
+    font-weight: bolder;
+}
+.offer{
+    align-items: center;
+}
+.offer_container{
+    justify-content: space-evenly;
+}
+.card_offer{
+    margin: 1rem;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
 }
 .copy_left{
     display: inline-block;
