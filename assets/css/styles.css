@@ -53,10 +53,16 @@
 /* Vérification de la liaison entre feuille de styles et html */
 body{
     background-color: azure;
-    background-image: url(../images/img/Dall-E_Japan-landscape-1.png);
+    background-image: url(../images/img/Dall-E_Blue-sea-and-sand.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.header_landing_link{
+    color: white;
+}
+.header_landing_link:hover{
+    color: var(--studi-yellow);
 }
 .header_button{
     border: 1px solid var(--studi-yellow);
@@ -83,4 +89,8 @@ main{
     display: flex;
     flex-direction: column;
     color: var(--studi-yellow);
+}
+.copy_left{
+    display: inline-block;
+    transform: rotate(180deg);
 }
