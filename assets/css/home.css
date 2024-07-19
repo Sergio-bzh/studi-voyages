@@ -1,0 +1,122 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+/* Surcharge du Root BS */
+:root {
+/** Colors **/
+--blue: #007bff;
+--indigo: #6610f2;
+--purple: #6f42c1;
+--pink: #e83e8c;
+--red: #dc3545;
+--orange: #fd7e14;
+--yellow: #ffc107;
+--green: #28a745;
+--teal: #20c997;
+--cyan: #17a2b8;
+--white: #fff;
+--gray: #6c757d;
+--gray-dark: #343a40;
+--primary: #ffb527;
+--secondary: #6c757d;
+--success: #28a745;
+--info: #17a2b8;
+--warning: #ffc107;
+--danger: #f5088e;
+--light: #f8f9fa;
+--dark: #343a40;
+/** My own variables déclaration **/
+--studi-yellow:#ffb527;
+--studi-blue: #59B9C7;
+/** Breack-Points **/
+--breakpoint-xs: 0;
+--breakpoint-sm: 576px;
+--breakpoint-md: 768px;
+--breakpoint-lg: 992px;
+--breakpoint-xl: 1200px;
+/** Fonts **/
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Reset global*/
+*, 
+*::before, 
+*::after{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* Vérification de la liaison entre feuille de styles et html */
+body{
+    background-color: var(--studi-blue)
+    /* background-image: url(../images/img/Dall-E_Blue-sea-and-sand.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+header{
+    position:fixed;
+    z-index: 1000;
+}
+input{
+    margin-bottom: 1rem;
+}
+.header-navbar .nav-link{
+    color:black;
+}
+.header-navbar .nav-link:hover{
+    color: var(--studi-yellow);
+}
+.header_button, .contact_button{
+    border: 1px solid var(--studi-yellow);
+    color: black;
+}
+.header_button:hover, .search_button:hover, .contact_button:hover{
+    background-color: var(--studi-yellow);
+    color: white;
+}
+.search{
+    margin-top: 120px;
+    width: 100vw;
+    height: 200px;
+    position: static;
+}
+.search img{
+    position: absolute;
+    width: 100%;
+    left: 1px;
+    top: 1px;
+    max-height: 21rem;
+}
+.search_title_wrapper, .search_navbar{
+    color: white;
+    z-index: 1;
+    align-self: center;
+    align-items: center;
+}
+.bar_filter_container{
+    background-color: var(--studi-yellow);
+    color: white;
+}
+.filter_item:hover{
+    color: black;
+    font-weight: bolder;
+}
+.offer{
+    align-items: center;
+}
+.offer_container{
+    justify-content: space-evenly;
+}
+.card_offer{
+    margin: 1rem;
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+}
+.copy_left{
+    display: inline-block;
+    transform: rotate(180deg);
+}
