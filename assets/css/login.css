@@ -1,0 +1,28 @@
+/* Reset global*/
+*, 
+*::before, 
+*::after{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+/* Vérification de la liaison entre feuille de styles et html */
+body{
+    background-color: var(--studi-blue)
+    /* background-image: url(../images/img/Dall-E_Blue-sea-and-sand.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+header{
+    position:fixed;
+    z-index: 1000;
+}
+input{
+    margin-bottom: 1rem;
+}
+main{
+    margin-top: 15rem;
+}
