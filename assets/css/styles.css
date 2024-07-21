@@ -59,13 +59,14 @@ body{
     background-size: cover;
 }
 .header_landing_link{
-    color: white;
+    color: black;
 }
 .header_landing_link:hover{
     color: var(--studi-yellow);
 }
 .header_button{
     border: 1px solid var(--studi-yellow);
+    color: white;
 }
 .header_button:hover{
     background-color: var(--studi-yellow);
