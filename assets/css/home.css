@@ -50,11 +50,11 @@
 }
 /* Vérification de la liaison entre feuille de styles et html */
 body{
-    background-color: var(--studi-blue)
-    /* background-image: url(../images/img/Dall-E_Blue-sea-and-sand.png);
+    background-color: var(--studi-blue); /* Couleur à afficher en cas de problème avec l'image de fond*/
+    background-image: url(../images/background-img.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; */
+    background-size: cover;
 }
 header{
     position:fixed;
